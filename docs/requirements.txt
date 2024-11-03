@@ -1,3 +1,4 @@
-sphinx==7.2.6
-sphinx-rtd-theme==2.0.0
-sphinx-autodoc-typehints>=1.25.2
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+recommonmark
+sphinx-markdown-tables
