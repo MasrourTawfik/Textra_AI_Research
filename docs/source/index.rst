@@ -5,12 +5,8 @@ Welcome to Textra AI Research Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   introduction
-   pipeline
-   installation
-   usage
-   api
-   research
+   introduction.rst
+   pipeline.rst
 
 About the Project
 ----------------
