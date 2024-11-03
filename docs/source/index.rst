@@ -6,6 +6,7 @@ Welcome to Textra AI Research Documentation
    :caption: Contents:
 
    introduction
+   pipeline
    installation
    usage
    api
