@@ -1,5 +1,5 @@
 Welcome to Textra AI Research Documentation
-==========================================
+=========================================
 
 .. toctree::
    :maxdepth: 2
@@ -16,7 +16,7 @@ An intelligent system for analyzing and synthesizing AI research papers.
 Getting Started
 -------------
 
-Check out our :doc:`installation` guide to get started with Textra AI Research.
+The documentation includes guides on how to use Textra AI Research.
 
 Contact
 -------
