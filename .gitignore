@@ -42,3 +42,19 @@ wheels/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Data directories
+data/raw/pdfs/*
+data/raw/metadata/*
+data/processed/text/*
+data/processed/vectors/*
+data/knowledge_base/*
+!data/raw/pdfs/.gitkeep
+!data/raw/metadata/.gitkeep
+!data/processed/text/.gitkeep
+!data/processed/vectors/.gitkeep
+!data/knowledge_base/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
