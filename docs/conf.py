@@ -11,9 +11,11 @@ author = 'Fatima Zahra Oubella'
 release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
-# Add this line to specify the source directory
+# Add these lines to specify the source directory
 source_suffix = '.rst'
 master_doc = 'index'
+# Important: Add this line to point to your source directory
+source_dir = 'source'
 
 extensions = [
     'sphinx.ext.autodoc',
@@ -23,12 +25,12 @@ extensions = [
     'sphinx_rtd_theme',
 ]
 
-templates_path = ['_templates']
+templates_path = ['source/_templates']  # Updated path
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+html_static_path = ['source/_static']  # Updated path
 
 # Theme options
 html_theme_options = {
