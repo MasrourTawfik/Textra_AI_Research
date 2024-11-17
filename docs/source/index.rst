@@ -8,6 +8,7 @@ Welcome to Textra AI Research Documentation
    introduction
    pipeline
    dataExtraction
+   OCR
 
 About the Project
 ----------------

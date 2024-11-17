@@ -3,7 +3,7 @@ Pipeline Architecture
 
 The TEXTRA-IA Research pipeline is composed of several interconnected components that work together to process, analyze, and synthesize scientific publications. This document details each component and their interactions.
 
-.. figure:: _static/images/pipeline.png
+.. figure:: _static\images\pipeline_updated.png
    :width: 100%
    :align: center
    :alt: TEXTRA-IA Research Pipeline Architecture

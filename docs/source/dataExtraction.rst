@@ -1,12 +1,12 @@
 Data Extraction
 ================
 
-This section details the data extraction process implemented in the TEXTRA-AI project, specifically focusing on Reinforcement Learning (RL) papers from arXiv.
+This section details the data extraction process implemented in the TEXTRA-AI project focusing on Reinforcement Learning (RL) papers from arXiv.
 
 Overview
 ---------
 
-The data extraction pipeline is designed to systematically collect and process academic papers related to Reinforcement Learning. This specialized focus allows us to create a targeted knowledge base for RL research while demonstrating the pipeline's capabilities.
+The data extraction pipeline is designed to systematically collect and process academic papers related to Reinforcement Learning.
 
 Pipeline Components
 --------------------
@@ -30,7 +30,7 @@ Pipeline Components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Papers are downloaded as PDFs
-* Metadata is extracted and stored, including:
+* **Metadata** is extracted and stored, including:
 
   * Title
   * Authors
@@ -56,8 +56,8 @@ The pipeline organizes data into the following structure::
     │   │   └── vectors/       # Vectorized representations
     │   └── knowledge_base/    # Final processed data
 
-3. Implementation Details
---------------------------
+3. Details
+------------
 
 3.1 Paper Search and Download
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -90,18 +90,10 @@ The pipeline organizes data into the following structure::
   * Abstract scanning for RL-related terms
   * Category checking (cs.LG, cs.AI, etc.)
 
-Study Case: RL Papers
-----------------------
 
-For this project's study case, we specifically chose to focus on Reinforcement Learning papers for several reasons:
 
-1. **Clear Domain Boundaries**: RL represents a well-defined subfield of machine learning
-2. **Active Research Area**: Regular publication of new papers ensures fresh content
-3. **Structured Content**: RL papers typically follow consistent patterns in methodology and evaluation
-4. **Practical Applications**: Results can be directly useful for RL researchers and practitioners
-
-Implementation Notes
-~~~~~~~~~~~~~~~~~~~~~
+Notes
+~~~~~~
 
 The current implementation includes:
 
@@ -110,18 +102,11 @@ The current implementation includes:
 * Basic content validation
 * Structured file organization
 
-Future Enhancements
-~~~~~~~~~~~~~~~~~~~~
+Next step
+~~~~~~~~~~
 
-Planned improvements include:
-1. OCR Implementation
-2. Text cleaning procedures
-3. Structure extraction
-4. Integration with existing metadata system
-5. Enhanced RL content validation
-6. Deeper semantic analysis of RL methodologies
-7. Automated categorization of RL subtopics
-8. Citation network analysis for RL papers
+- OCR and layout analysis implementation
+
 
 Usage
 -----
@@ -143,5 +128,4 @@ Some considerations
 
 * API rate limiting must be respected when accessing arXiv
 * PDF processing can be computationally intensive
-* Some papers may require manual verification for RL content
 * Storage space requirements increase with the number of papers

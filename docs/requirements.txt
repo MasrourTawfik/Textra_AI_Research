@@ -1,9 +1,36 @@
+# Documentation
 sphinx>=4.0.0
 sphinx-rtd-theme>=1.0.0
 recommonmark
 sphinx-markdown-tables
-arxiv
-pytesseract
-pdf2image
-pandas
-tqdm
+
+# Core PDF and Image Processing
+PyMuPDF>=1.23.8
+pdf2image>=1.23.0  # Added version for consistency
+pytesseract>=0.3.10
+arxiv>=1.4.7
+
+# Layout Analysis
+layoutparser[paddledetection]>=0.3.4
+# Note: For PyTorch, install separately with:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# Image Processing
+opencv-python>=4.8.1
+Pillow>=10.1.0
+
+# Data Processing
+pandas>=2.1.0  # Added version
+numpy>=1.26.2
+tqdm>=4.66.1
+
+# Text Processing
+spacy>=3.7.2
+
+# Development Tools
+python-dotenv>=1.0.0
+
+# Optional: Consider adding these for development
+pytest>=7.4.0  # For testing
+black>=23.9.1  # For code formatting
+isort>=5.12.0  # For import sorting
