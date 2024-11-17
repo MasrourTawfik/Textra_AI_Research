@@ -13,7 +13,7 @@ release = '0.1.0'
 # -- General configuration ---------------------------------------------------
 # Add this line to specify the source directory
 source_suffix = '.rst'
-source_dir = 'source'
+master_doc = 'index'
 
 extensions = [
     'sphinx.ext.autodoc',
