@@ -11,7 +11,8 @@ pytesseract>=0.3.10
 arxiv>=1.4.7
 
 # Layout Analysis
-layoutparser[paddledetection]>=0.3.4
+layoutparser[paddledetection]>=0.3.4  
+paddlepaddle>=2.3.0  
 # Note: For PyTorch, install separately with:
 # pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 
