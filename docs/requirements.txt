@@ -6,7 +6,7 @@ sphinx-markdown-tables
 
 # Core PDF and Image Processing
 PyMuPDF>=1.23.8
-pdf2image>=1.23.0  # Added version for consistency
+pdf2image>=1.17.0  # Added version for consistency
 pytesseract>=0.3.10
 arxiv>=1.4.7
 
