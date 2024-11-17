@@ -130,3 +130,9 @@ Some considerations
 * API rate limiting must be respected when accessing arXiv
 * PDF processing can be computationally intensive
 * Storage space requirements increase with the number of papers
+
+Notebook
+----------
+.. raw:: html
+
+   <iframe src="path/to/your_notebook.html" width="100%" height="600px"></iframe>
