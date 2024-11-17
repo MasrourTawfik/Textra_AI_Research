@@ -13,9 +13,9 @@ release = '0.1.0'
 # -- General configuration ---------------------------------------------------
 # Add these lines to specify the source directory
 source_suffix = '.rst'
-master_doc = 'index'
 # Important: Add this line to point to your source directory
 source_dir = 'source'
+master_doc = 'source/index'
 
 extensions = [
     'sphinx.ext.autodoc',
@@ -23,6 +23,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.intersphinx',
     'sphinx_rtd_theme',
+    'sphinx.ext.autosummary',
 ]
 
 templates_path = ['source/_templates']  # Updated path

@@ -1,3 +1,4 @@
+================
 Data Extraction
 ================
 
@@ -103,13 +104,13 @@ The current implementation includes:
 * Structured file organization
 
 Next step
-~~~~~~~~~~
+~~~~~~~~~~~
 
 - OCR and layout analysis implementation
 
 
 Usage
------
+------
 
 To use the data extraction pipeline:
 
@@ -124,7 +125,7 @@ To use the data extraction pipeline:
 4. Monitor the organized output in the data directory structure
 
 Some considerations
--------------------------------
+--------------------
 
 * API rate limiting must be respected when accessing arXiv
 * PDF processing can be computationally intensive
