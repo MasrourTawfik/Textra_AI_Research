@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -13,13 +13,13 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2389946f"></script>
-      <script src="_static/doctools.js?v=888ff710"></script>
-      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="_static/documentation_options.js?v=01f34227"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="introduction.html" /> 
+    <link rel="next" title="TEXTRA-IA Research" href="introduction.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,13 +43,14 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#a-propos-de-textra-ia-research">À propos de TEXTRA-IA Research</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#technologies-cles">Technologies Clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#cas-d-utilisation">Cas d’Utilisation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#notre-mission">Notre Mission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#types-de-documents-analyses">Types de Documents Analysés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#impact-et-innovation">Impact et Innovation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">TEXTRA-IA Research</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#challenges">Challenges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#our-solution">Our Solution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#information-extraction">Information Extraction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#analysis-visualization">Analysis &amp; Visualization</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#how-it-works">How It Works</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline Architecture</a><ul>
@@ -60,6 +61,31 @@
 <li class="toctree-l2"><a class="reference internal" href="pipeline.html#research-synthesis-system">Research Synthesis System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pipeline.html#timeline-and-trend-analysis">Timeline and Trend Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pipeline.html#integration-points">Integration Points</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rl.html">Proof of Concept: Reinforcement Learning Papers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#understanding-reinforcement-learning-papers">Understanding Reinforcement Learning Papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#hierarchical-document-understanding">Hierarchical Document Understanding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dataExtraction.html">Data Extraction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#pipeline-components">Pipeline Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dataExtraction.html#paper-collection">1. Paper Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataExtraction.html#data-processing-pipeline">2. Data Processing Pipeline</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dataExtraction.html#initial-data-collection">2.1 Initial Data Collection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dataExtraction.html#file-organization">2.2 File Organization</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#details">3. Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dataExtraction.html#notes">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataExtraction.html#next-step">Next step</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#some-considerations">Some considerations</a></li>
 </ul>
 </li>
 </ul>
@@ -89,17 +115,14 @@
            <div itemprop="articleBody">
              
   <section id="welcome-to-textra-ai-research-documentation">
-<h1>Welcome to Textra AI Research Documentation<a class="headerlink" href="#welcome-to-textra-ai-research-documentation" title="Permalink to this heading"></a></h1>
+<h1>Welcome to Textra AI Research Documentation<a class="headerlink" href="#welcome-to-textra-ai-research-documentation" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#a-propos-de-textra-ia-research">À propos de TEXTRA-IA Research</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#technologies-cles">Technologies Clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#cas-d-utilisation">Cas d’Utilisation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#notre-mission">Notre Mission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#types-de-documents-analyses">Types de Documents Analysés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#impact-et-innovation">Impact et Innovation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">TEXTRA-IA Research</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#challenges">Challenges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#our-solution">Our Solution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#how-it-works">How It Works</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline Architecture</a><ul>
@@ -112,19 +135,28 @@
 <li class="toctree-l2"><a class="reference internal" href="pipeline.html#integration-points">Integration Points</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="rl.html">Proof of Concept: Reinforcement Learning Papers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#understanding-reinforcement-learning-papers">Understanding Reinforcement Learning Papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#hierarchical-document-understanding">Hierarchical Document Understanding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dataExtraction.html">Data Extraction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#pipeline-components">Pipeline Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#details">3. Details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataExtraction.html#some-considerations">Some considerations</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <section id="about-the-project">
-<h2>About the Project<a class="headerlink" href="#about-the-project" title="Permalink to this heading"></a></h2>
+<h2>About the Project<a class="headerlink" href="#about-the-project" title="Link to this heading"></a></h2>
 <p>An intelligent system for analyzing and synthesizing AI research papers.</p>
 </section>
 <section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
 <p>The documentation includes guides on how to use Textra AI Research.</p>
-</section>
-<section id="contact">
-<h2>Contact<a class="headerlink" href="#contact" title="Permalink to this heading"></a></h2>
-<p>For any questions or feedback, please reach out to the development team.</p>
 </section>
 </section>
 
@@ -132,7 +164,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="introduction.html" class="btn btn-neutral float-right" title="TEXTRA-IA Research" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

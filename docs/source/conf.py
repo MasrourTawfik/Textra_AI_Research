@@ -15,7 +15,7 @@ release = '0.1.0'
 source_suffix = '.rst'
 # Important: Add this line to point to your source directory
 source_dir = 'source'
-master_doc = 'source/index'
+master_doc = 'index'
 
 extensions = [
     'sphinx.ext.autodoc',
